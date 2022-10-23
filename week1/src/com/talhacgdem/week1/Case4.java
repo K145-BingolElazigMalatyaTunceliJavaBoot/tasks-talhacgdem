@@ -3,7 +3,7 @@ package com.talhacgdem.week1;
 import java.util.Random;
 
 public class Case4 {
-    public int task4() {
+    public String calculate() {
         Random random = new Random(); // Random nesnemizi oluşturduk
         int count = 1; // Adım sayısı için int değer
         int current; // Anlık random ifadesini tuttuğumuz değişken
@@ -14,6 +14,6 @@ public class Case4 {
             }
             count++; // sayacı artırdık
         }
-        return count;
+        return "Step %d to find numbers between 50 and 100".formatted(count);
     }
 }
